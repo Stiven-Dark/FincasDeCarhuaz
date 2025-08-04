@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urb. Las Dunas - Proyecto</title>
+  <link rel="icon" href="assets/img/LOGO2.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/proyecto.css" />
+  <link rel="stylesheet" href="css/header2.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <!-- Sección HERO -->
+<section class="proyecto-hero">
+  <div class="proyecto-titulo">URBANIZACIÓN LAS DUNAS</div>
+
+  <div class="proyecto-hero-content">
+    <div class="proyecto-info">
+      <p><strong>Nos encontramos en:</strong></p>
+      <p>Av. Juan Pablo Fernandini 312, Ica</p>
+      <p><strong>Nuestro horario de atención:</strong></p>
+      <p>Lunes a Viernes de 9:00 AM - 6:00 PM</p>
+      <p>Sábados de 9:00 AM - 1:00 PM</p>
+      <div class="precio-destacado">
+        <div class="precio-box">
+          <p class="desde">Precio desde</p>
+          <h2>S/ 560</h2>
+          <p class="mes">al mes</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="proyecto-carrusel">
+      <div class="carousel-slide active">
+        <img src="assets/proyecto/1.jpg" alt="Imagen 1" />
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/proyecto/2.jpg" alt="Imagen 2" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Navegación -->
+  <div class="nav-secciones">
+    <button onclick="mostrarSeccion('descripcion')">Descripción</button>
+    <button onclick="mostrarSeccion('beneficios')">Beneficios</button>
+    <button onclick="mostrarSeccion('galeria')">Galería</button>
+    <button onclick="mostrarSeccion('ubicacion')">Ubicación</button>
+  </div>
+
+  <!-- Descripción -->
+  <section id="descripcion" class="seccion-activa">
+    <div class="card-desc">
+      <h2>Sobre Nuestro Proyecto</h2>
+      <p>
+        La Urbanización Las Dunas es un desarrollo habitacional planificado que incorpora criterios de ordenamiento urbano, funcionalidad y adaptación al entorno desértico.
+        Su diseño contempla una red vial estructurada con calles amplias, banquetas adoquinadas y alumbrado público moderno,
+        además de áreas verdes distribuidas estratégicamente para mejorar el confort térmico y visual.
+      </p>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section id="beneficios" class="seccion-oculta">
+    <h2>Disfruta con todo equipado</h2>
+    <div class="icon-cards">
+      <div class="card"><i class="fa-solid fa-house-circle-check"></i><p>Título de Propiedad</p></div>
+      <div class="card"><i class="fa-solid fa-lightbulb"></i><p>Servicios completos</p></div>
+      <div class="card"><i class="fa-solid fa-child-reaching"></i><p>Juegos para niños</p></div>
+      <div class="card"><i class="fa-solid fa-tree"></i><p>Parques</p></div>
+      <div class="card"><i class="fa-solid fa-bicycle"></i><p>Ciclovía</p></div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="galeria" class="seccion-oculta galeria">
+      
+    <div class="galeria-doble">
+        <!-- Galería de fotos -->
+        <div class="galeria-columna">
+          <h3>Galería del Proyecto</h3>
+          <div class="imagen-grande">
+            <img id="imgGaleria" src="assets/proyecto/galeria/1.jpg" alt="Galería" />
+          </div>
+          <div class="miniaturas">
+            <img src="assets/proyecto/galeria/1.jpg" alt="img1" onclick="cambiarImagen(this)">
+            <img src="assets/proyecto/galeria/2.jpg" alt="img2" onclick="cambiarImagen(this)">
+            <img src="assets/proyecto/galeria/3.jpg" alt="img3" onclick="cambiarImagen(this)">
+            <img src="assets/proyecto/galeria/5.jpg" alt="img5" onclick="cambiarImagen(this)">
+            <img src="assets/proyecto/galeria/6.jpg" alt="img6" onclick="cambiarImagen(this)">
+            <img src="assets/proyecto/galeria/8.jpg" alt="img8" onclick="cambiarImagen(this)">
+            <img src="assets/proyecto/galeria/9.jpg" alt="img9" onclick="cambiarImagen(this)">
+          </div>  
+        </div>
+
+        <!-- Avances de obra -->
+        <div class="galeria-columna">
+          <h3>Avances del Proyecto</h3>
+          <div class="imagen-grande">
+            <img id="imgAvance" src="assets/proyecto/avance/1.jpg" alt="Avances" />
+          </div>
+          <div class="miniaturas">
+            <img src="assets/proyecto/avance/1.jpg" onclick="cambiarImagen('imgAvance', this)" />
+            <img src="assets/proyecto/avance/2.jpg" onclick="cambiarImagen('imgAvance', this)" />
+            <img src="assets/proyecto/avance/3.jpg" onclick="cambiarImagen('imgAvance', this)" />
+            <img src="assets/proyecto/avance/4.jpg" onclick="cambiarImagen('imgAvance', this)" />
+            <img src="assets/proyecto/avance/5.jpg" onclick="cambiarImagen('imgAvance', this)" />
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- Ubicación -->
+  <section id="ubicacion" class="seccion-oculta ubicacion">
+    <h2>Ubicación del Proyecto</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14714.40456177454!2d-75.83058272855561!3d-14.071864439707124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110e5322d5ec0bd%3A0x10d2f08564d83b31!2sUrb.%20Las%20Dunas%20de%20Carhuaz!5e1!3m2!1ses!2spe!4v1752866869120!5m2!1ses!2spe"
+      allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>Kilómetro 9.5 de la carretera Carhuaz - Ica</p>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script>
+    function mostrarSeccion(id) {
+      document.querySelectorAll("section[id]").forEach(s => {
+        s.classList.remove("seccion-activa");
+        s.classList.add("seccion-oculta");
+      });
+      document.getElementById(id).classList.remove("seccion-oculta");
+      document.getElementById(id).classList.add("seccion-activa");
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      let current = 0;
+      const slides = document.querySelectorAll(".carousel-slide");
+      setInterval(() => {
+        slides[current].classList.remove("active");
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("active");
+      }, 4000);
+    });
+
+  </script>
+
+    <script>
+  // Cargar componentes HTML en sus contenedores
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch("components/header.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+    fetch("components/loader.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("loader-placeholder").innerHTML = data);
+
+    fetch("components/footer.html")
+      .then(res => res.text())
+      .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+  });
+</script>
+
+<script>
+  function cambiarImagen(idOrElement, sourceImage) {
+    let target;
+    if (typeof idOrElement === 'string') {
+      target = document.getElementById(idOrElement);
+    } else {
+      target = document.getElementById('imgGaleria');
+      sourceImage = idOrElement;
+    }
+
+    target.classList.add('fade-out');
+
+    setTimeout(() => {
+      target.src = sourceImage.src;
+      target.alt = sourceImage.alt || '';
+      target.classList.remove('fade-out');
+    }, 300);
+  }
+</script>
+
+<style>
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+</style>
+
+
+</body>
+</html>

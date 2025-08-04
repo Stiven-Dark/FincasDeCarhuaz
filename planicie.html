@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PLANICIE DE COSTA SUR - Proyecto</title>
+  <link rel="icon" href="assets/img/LOGO2.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/proyecto.css" />
+  <link rel="stylesheet" href="css/header2.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER DINÁMICO -->
+  <div id="header-placeholder"></div>
+
+  <!-- Sección HERO -->
+  <section class="proyecto-hero">
+    <h1 class="proyecto-titulo">PLANICIE DE COSTA SUR</h1>
+    <div class="proyecto-hero-content">
+      <div class="proyecto-info">
+        <p><strong>Nos encontramos en:</strong></p>
+        <p>Av. Juan Pablo Fernandini 312, Ica</p>
+        <p><strong>Horario de atención:</strong></p>
+        <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+        <p>Sábados: 9:00 AM - 1:00 PM</p>
+        <div class="precio-destacado">
+          <div class="precio-box">
+            <p class="desde">Precio desde</p>
+            <h2>S/ 540</h2>
+            <p class="mes">al mes</p>
+          </div>
+        </div>
+      </div>
+      <div class="proyecto-carrusel">
+        <div class="carousel-slide active"><img src="assets/proyecto2/1.jpg" alt="Imagen 1"></div>
+        <div class="carousel-slide"><img src="assets/proyecto2/2.jpg" alt="Imagen 2"></div>
+        <div class="carousel-slide"><img src="assets/proyecto2/3.jpg" alt="Imagen 3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navegación entre secciones -->
+  <div class="nav-secciones">
+    <button onclick="mostrarSeccion('descripcion')">Descripción</button>
+    <button onclick="mostrarSeccion('beneficios')">Beneficios</button>
+    <button onclick="mostrarSeccion('galeria')">Galería</button>
+    <button onclick="mostrarSeccion('ubicacion')">Ubicación</button>
+  </div>
+
+  <!-- Sección Descripción -->
+  <section id="descripcion" class="seccion-activa">
+    <div class="card-desc">
+      <h2>Sobre Nuestro Proyecto</h2>
+      <p>Planicie de Costa Sur es una propuesta de desarrollo urbano que integra armónicamente infraestructura, paisaje y espacios 
+        públicos en un entorno costero. El diseño considera amplias áreas peatonales con vegetación variada, mobiliario urbano moderno
+        y zonas de sombra que favorecen la estancia y el tránsito peatonal. Las vías de circulación están bien definidas, con 
+        pavimentos diferenciados y áreas de estacionamiento que contribuyen a un orden vial eficiente.</p>
+      <p>El proyecto destaca por la implementación de espacios recreativos para todas las edades, incluyendo áreas de juegos 
+        infantiles, gimnasios al aire libre y canchas deportivas. La presencia de parques, jardines y plazas activas fortalece el 
+        tejido social y promueve un estilo de vida saludable.</p>
+    </div>
+  </section>
+
+  <!-- Sección Beneficios -->
+  <section id="beneficios" class="seccion-oculta">
+    <h2>Disfruta con todo equipado</h2>
+    <div class="icon-cards">
+      <div class="card"><i class="fa-solid fa-file-signature"></i><p>Título de Propiedad</p></div>
+      <div class="card"><i class="fa-solid fa-bolt"></i><p>Servicios completos</p></div>
+      <div class="card"><i class="fa-solid fa-tree-city"></i><p>Parque de Recreación</p></div>
+      <div class="card"><i class="fa-solid fa-building-columns"></i><p>Club Privado</p></div>
+      <div class="card"><i class="fa-solid fa-square-parking"></i><p>Zona de Parqueo</p></div>
+    </div>
+  </section>
+
+  <!-- Sección Galería -->
+  <section id="galeria" class="seccion-oculta">
+
+        <div class="galeria-doble">
+        <!-- Galería de fotos -->
+        <div class="galeria-columna">
+          <h3>Galería del Proyecto</h3>
+          <div class="imagen-grande">
+            <img id="imgGaleria" src="assets/proyecto2/galeria/1.jpg" alt="Galería" />
+          </div>
+          <div class="miniaturas">
+            <img src="assets/proyecto2/galeria/1.jpg" alt="1" onclick="cambiarImagen(this)">
+            <img src="assets/proyecto2/galeria/2.jpg" alt="2" onclick="cambiarImagen(this)">
+            <img src="assets/proyecto2/galeria/3.jpg" alt="3" onclick="cambiarImagen(this)">
+            <img src="assets/proyecto2/galeria/4.jpg" alt="4" onclick="cambiarImagen(this)">
+            <img src="assets/proyecto2/galeria/5.jpg" alt="5" onclick="cambiarImagen(this)">
+            <img src="assets/proyecto2/galeria/6.jpg" alt="6" onclick="cambiarImagen(this)">
+            <img src="assets/proyecto2/galeria/7.jpg" alt="7" onclick="cambiarImagen(this)">
+          </div>  
+        </div>
+
+        <!-- Avances de obra -->
+        <div class="galeria-columna">
+          <h3>Avances del Proyecto</h3>
+          <div class="imagen-grande">
+            <img id="imgAvance" src="assets/proyecto2/avance/1.jpg" alt="Avances" />
+          </div>
+          <div class="miniaturas">
+            <img src="assets/proyecto2/avance/1.jpg" onclick="cambiarImagen('imgAvance', this)" />
+            <img src="assets/proyecto2/avance/2.jpg" onclick="cambiarImagen('imgAvance', this)" />
+            <img src="assets/proyecto2/avance/3.jpg" onclick="cambiarImagen('imgAvance', this)" />
+            <img src="assets/proyecto2/avance/4.jpg" onclick="cambiarImagen('imgAvance', this)" />
+            <img src="assets/proyecto2/avance/5.jpg" onclick="cambiarImagen('imgAvance', this)" />
+            <img src="assets/proyecto2/avance/6.jpg" onclick="cambiarImagen('imgAvance', this)" />
+          </div>
+        </div>
+      </div>
+
+
+  </section>
+
+  <!-- Sección Ubicación -->
+  <section id="ubicacion" class="seccion-oculta ubicacion">
+    <h2>Ubicación del Proyecto</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46478.52421718711!2d-75.86148092085455!3d-14.726566856087445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91172f0003b94e93%3A0xd57bf260cbe6df4f!2sPlanicie%20de%20costa%20sur!5e1!3m2!1ses!2spe!4v1752334205247!5m2!1ses!2spe" 
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+    <p>Punta Lomita, Ocucaje - Ica</p>
+  </section>
+
+  <!-- Footer dinámico -->
+  <div id="footer-placeholder"></div>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/51981592217" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/load-components.js"></script>
+
+  <script>
+      function mostrarSeccion(id) {
+        document.querySelectorAll("section[id]").forEach(s => {
+          s.classList.remove("seccion-activa");
+          s.classList.add("seccion-oculta");
+        });
+        const activa = document.getElementById(id);
+        activa.classList.remove("seccion-oculta");
+        activa.classList.add("seccion-activa");
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        let paused = false;
+        const slides = document.querySelectorAll(".carousel-slide");
+        let currentSlide = 0;
+
+        const carrusel = document.querySelector(".carousel-top");
+        if (carrusel) {
+          carrusel.addEventListener("mouseenter", () => paused = true);
+          carrusel.addEventListener("mouseleave", () => paused = false);
+        }
+
+        setInterval(() => {
+          if (!paused && slides.length > 1) {
+            slides[currentSlide].classList.remove("active");
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add("active");
+          }
+        }, 3000);
+      });
+
+      // Cargar componentes HTML en sus contenedores
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("components/header.html")
+          .then(res => res.text())
+          .then(data => document.getElementById("header-placeholder").innerHTML = data);
+
+        fetch("components/loader.html")
+          .then(res => res.text())
+          .then(data => document.getElementById("loader-placeholder").innerHTML = data);
+
+        fetch("components/footer.html")
+          .then(res => res.text())
+          .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+      });
+  </script>
+
+  <script>
+  function cambiarImagen(idOrElement, sourceImage) {
+    let target;
+    if (typeof idOrElement === 'string') {
+      target = document.getElementById(idOrElement);
+    } else {
+      target = document.getElementById('imgGaleria');
+      sourceImage = idOrElement;
+    }
+
+    target.classList.add('fade-out');
+
+    setTimeout(() => {
+      target.src = sourceImage.src;
+      target.alt = sourceImage.alt || '';
+      target.classList.remove('fade-out');
+    }, 300);
+  }
+</script>
+
+<style>
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+</style>
+
+</body>
+</html>
